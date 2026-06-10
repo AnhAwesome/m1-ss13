@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soLuongPhanTu = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+let mangSoNguyen = [];
+
+while (mangSoNguyen.length < soLuongPhanTu) {
+    let soNgauNhien = Math.floor(Math.random() * 10) + 1; 
+    mangSoNguyen.push(soNgauNhien);
+}
+
+console.log("Mảng số nguyên có sẵn (" + soLuongPhanTu + " phần tử):", mangSoNguyen);
+
+let k = parseInt(prompt("Nhập vào một số nguyên k (từ 1 đến 10) để kiểm tra:"));
+let dem = 0;
+
+for (let i = 0; i < mangSoNguyen.length; i++) {
+    if (mangSoNguyen[i] === k) {
+        dem = dem + 1;
+    }
+}
+
+if (dem > 0) {
+    alert("Số " + k + " xuất hiện " + dem + " lần trong mảng.");
+} else {
+    alert("Số " + k + " không xuất hiện trong mảng.");
+}
+
+    </script>
+</body>
+</html>
