@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let danhSachSo = [];
+       
+        let soLuongPhanTu = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+
+        while (danhSachSo.length < soLuongPhanTu) {
+            let soNgauNhien = Math.floor(Math.random() * 100) + 1;
+        }
+
+        console.log("Mảng ngẫu nhiên được tạo (" + soLuongPhanTu + " phần tử):", danhSachSo);
+
+        let tongLe = 0;
+        let tongChan = 0;
+
+        for (let i = 0; i < danhSachSo.length; i++) {
+            let soHienTai = danhSachSo[i];
+
+            if (soHienTai % 2 !== 0) {
+      
+                tongLe = tongLe + soHienTai;
+            } else {
+              
+                tongChan = tongChan + soHienTai;
+            }
+        }
+
+        alert("Tổng các số LẺ trong mảng là: " + tongLe);
+        alert("Tổng các số CHẴN trong mảng là: " + tongChan);
+
+    </script>
+</body>
+
+</html>
