@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let chuoiNhapVao = prompt("Nhập vào dãy số của bạn (các số cách nhau bằng dấu phẩy, ví dụ: 15,4,89,32,7):");
+
+if (chuoiNhapVao !== null && chuoiNhapVao.trim() !== "") {
+
+    let mangChuoi = chuoiNhapVao.split(",");
+    
+    let max = Number(mangChuoi[0]);
+    
+    for (let i = 1; i < mangChuoi.length; i++) {
+    
+        let soHienTai = Number(mangChuoi[i]);
+        
+        if (soHienTai > max) {
+            max = soHienTai;
+        }
+    }
+    
+    // 5. In kết quả ra màn hình bằng alert()
+    alert("Số lớn nhất trong mảng là: " + max);
+    
+} else {
+    alert("Bạn chưa nhập dữ liệu hợp lệ!");
+}
+
+    </script>
+</body>
+</html>
