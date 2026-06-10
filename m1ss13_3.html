@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        let chuoiNhapVao = prompt("Nhập vào dãy số của bạn (các số cách nhau bằng dấu phẩy, ví dụ: 1,2,3,4,5):");
+
+        if (chuoiNhapVao !== null && chuoiNhapVao.trim() !== "") {
+
+            let mangBanDau = chuoiNhapVao.split(",");
+
+            mangBanDau.reverse();
+
+            console.log("--- KẾT QUẢ ĐẢO NGƯỢC ---");
+            console.log("Mảng sau khi đảo ngược:", mangBanDau);
+
+        } else {
+            console.log("Bạn chưa nhập dữ liệu hợp lệ!");
+        }
+
+    </script>
+</body>
+
+</html>
